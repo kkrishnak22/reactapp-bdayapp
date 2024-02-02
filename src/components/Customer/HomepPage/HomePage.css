@@ -1,0 +1,337 @@
+.Homepage{
+  background: linear-gradient(to bottom right, #8df6f6, #f5aacf, #ff69b4);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  
+}
+.Booking-Navabar{
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+}
+.search-box {
+    position: sticky;
+    top: 0;
+    top: 80px;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    margin : 10px 10px;
+    width: 100%;
+  }
+  
+  .search_input {
+    flex:1;
+    width: 100%; 
+    border: 3px solid #8c52b5;
+    border-right: none;
+    padding: 5px;
+    height: 30px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #8c52b5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .search_input:focus {
+    color: #00b4cc;
+  }
+  
+  ::placeholder {
+    color: black;
+  }
+  
+  .search-box button {
+    width: 45px;
+    height: 45px;
+    border: 1px solid #8c52b5;
+    background: #8c52b5;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E"); 
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .wrap{
+    display: inline-flex;
+    align-items: center;
+    width:50%;
+  }
+  .filter-container  {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    background-color: #a485c8;
+    border-radius: 4px;
+    margin-left: 20px;
+  }
+  
+  .filter-container select {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 5px;
+    padding: 3px 5px;
+    width: 90px;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .filter-container select:hover option {
+    background-color: whitesmoke;
+  }
+  
+  /*grid cards*/
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(1, 1fr);
+      padding: 10px;
+      max-width: 600px;
+    }
+  }
+  
+  
+  
+  .bday-card{
+    background-color: white;
+    width: 300px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    transition: transform 0.3s , box-shadow 0.3s ;
+  }
+  
+  
+  .bday-card:hover {
+    box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3px);
+  }
+  
+  .bday-card img {
+    position: relative;
+    object-fit: cover;
+    border-radius: 0px;
+    width:100%;
+    max-height: 500px;
+  }
+  
+  .place-rating-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 0 5px;
+  }
+  
+  .event-name {
+    text-align: center;
+    margin-top: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  /* Rating stars styles */
+  
+  .rating {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .gold-star {
+    color: gold;
+  }
+  
+  .silver-star {
+    color: silver;
+  }
+  .half-star {
+    color: silver;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .half-star::before {
+    content: "\2605";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    overflow: hidden;
+    color: gold;
+    z-index: 1;
+  }
+  
+  .half-star::after {
+    content: "\2605";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    overflow: hidden;
+    color: silver;
+    z-index: 0;
+  }
+  /* Add this CSS code to your styles */
+.link-wrapper {
+  text-decoration: none;
+  color: inherit;
+}
+
+.link-wrapper:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 200%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+.modal-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+
+.modal-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.8);
+}
+
+.modal-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2px;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+}
+
+.info {
+  font-size: 20px;
+}
+
+.modal-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding-left: 30px;
+ 
+}
+.modal-details h1{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.modal-details p {
+  margin-bottom: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.modal-details .imgname {
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #3d3d3d;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.price {
+  min-height: 60px;
+  text-align: left;
+  box-sizing: border-box;
+  font-size: 48px;
+  color: #222;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.modal-actions button {
+  padding: 10px 20px;
+  margin-left: 20px;
+  background-color: #ea31b9;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.modal-actions button:hover {
+  background-color: #f974d5;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+  transform: translateY(0.3px);
+}
+
+/* ... Other CSS styles ... */
+
+.rate-container {
+  display: flex;
+  align-items: center;
+}
+
+.average-rating {
+  display: flex;
+  align-items: center;
+  margin-right: 10px; /* Add equal spacing between the average rating and the Rating component */
+}
+
+.average-rating p,
+.total-rating p {
+  margin: 0;
+  margin-right: 10px; /* Add equal spacing between the rating value and the Rating component */
+}
+
+.total-rating {
+  font-size: 14px;
+  color: #666;
+}
+

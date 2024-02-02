@@ -1,0 +1,346 @@
+.add-menu-container {
+  display: flex;
+  flex-direction: column;
+  /* background: linear-gradient(to right, #b2fefa, #0ed2f7); */
+  min-height: 100vh;
+  padding-bottom: 10%;
+}
+
+.ReactModal__Content {
+  width: fit-content !important;
+  height: 400px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  left: 30% !important;
+}
+
+.kdgCYE {
+  gap: 10px !important;
+}
+
+.hbgCLW {
+  padding: 10px;
+}
+
+.blGEez {
+  justify-content: center !important;
+}
+
+.dKzMcW {
+  justify-content: center !important;
+}
+
+/* .container > div {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+} */
+
+.add-menu-container>div>button {
+  order: -1;
+}
+
+.add-menu-container ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+
+.add-menu-container ul li {
+  flex-basis: 20%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* item css */
+.con {
+  width: 100%;
+}
+
+.item-box {
+  display: flex;
+  background-color: aqua;
+  margin: 6px;
+  align-items: center;
+  padding: 10px;
+}
+
+.item-box p {
+  margin: 0 6px;
+}
+
+.button-group {
+  display: flex;
+}
+
+/* modal css */
+
+.custom-item-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+  width: 400px;
+}
+
+.custom-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.custom-buttons-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  width: 200px;
+}
+
+.custom-buttons-container button {
+  padding: 8px 16px;
+  background-color: #0e0e0e;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.custom-buttons-container button:hover {
+  background-color: #808080;
+}
+
+/* ADD ITEM CSS */
+
+.add-item {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-item-text {
+  margin-bottom: 10px;
+  font-weight: bold;
+  padding-right: 20px;
+}
+
+.add-item-button {
+  padding: 8px 16px;
+  background-color: #212427;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-item-button:hover {
+  background-color: rgb(169, 33, 228);
+}
+
+/* Add item modal */
+
+.new-item-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /* padding: 20px; */
+  border-radius: 8px;
+  background-color: #ffffff;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+  width: 200px;
+  padding-bottom: 20px;
+}
+
+.rounded-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.new-item-buttons-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  width: 200px;
+}
+
+.new-item-buttons-container button {
+  padding: 8px 16px;
+  background-color: #0e0e0e;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.new-item-buttons-container button:hover {
+  background-color: #808080;
+}
+
+/* Table CSS */
+
+table {
+  border-collapse: separate;
+  border-spacing: 10px 40px;
+  /* Add spacing between table rows */
+  width: 50%;
+}
+
+th:first-child,
+td:first-child {
+  width: 50%;
+  /* Adjust the width as needed */
+}
+
+/* table tr {
+  background: linear-gradient(to right, #b2fefa, #0ed2f7); /* Add gradient background to table rows */
+
+table th,
+table td {
+  padding: 10px;
+  text-align: center;
+}
+
+table th {
+  background-color: #5c4f4f;
+}
+
+.edit_delete_button {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.image_add_menu {
+  width: 200px !important;
+  height: 150px !important;
+  border-radius: 10px !important;
+}
+
+.input-tags-container_addMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 500px;
+}
+
+.inputs_addMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 400px;
+}
+
+.inputs_addMenu>div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputs_addMenu>div>input {
+  width: 80%;
+}
+
+.row_values {
+  font-size: large;
+}
+
+.ant-card-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 2px solid rgb(215, 215, 215) !important;
+}
+
+.ant-card-bordered {
+  border: 2px solid rgb(215, 215, 215) !important;
+}
+
+.ant-card-actions>li {
+  flex-basis: 50% !important;
+}
+
+.ant-card-actions>li:first-child {
+  border-inline-end: 2px solid rgb(215, 215, 215) !important;
+}
+
+.cards_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: start;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 4%;
+}
+
+.ant-card-body {
+  padding: 10px !important;
+}
+
+.admin-add-menu-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  float: left;
+  margin: 0 5px;
+  background: #cbadff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-out;
+  overflow: hidden;
+}
+
+.admin-add-menu-button:hover {
+  width: 165px;
+}
+
+.admin-add-menu-button .admin-menu-icon {
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+
+.admin-add-menu-button .admin-menu-icon i {
+  font-size: 25px;
+  line-height: 60px;
+  color: white;
+}
+
+.admin-add-menu-button:hover::after {
+  content: "Add Item";
+  display: block;
+  position: absolute;
+  left: 50px;
+  top: 0;
+  width: 100px;
+  height: 60px;
+  background: #cbadff;
+  font-weight: bold;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 0 50px 50px 0;
+}

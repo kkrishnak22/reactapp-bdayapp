@@ -1,0 +1,84 @@
+.register-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background: linear-gradient(to bottom right, #8df6f6, #f5aacf, #ff69b4);
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  height: fit-content;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.register-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.register-heading {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Alegreya', serif;
+  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+  margin-bottom: 40px;
+  background: linear-gradient(to bottom right, #1aecec,  #f50d81);
+  -webkit-background-clip: text; /* For Safari */
+  -webkit-text-fill-color: transparent; /* For Safari */
+  background-clip: text;
+}
+
+.input-style-signup,
+.input-style-signup-select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 30px;
+  font-size: 14px;
+}
+
+.loginPara {
+  margin-top: 10px;
+  text-align: center;
+  color: #555;
+}
+
+#signinLink {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+.signup-button {
+  background-color: #f417b5; /* Set the background color */
+  color: white; /* Set the text color */
+  font-size: 16px; /* Set the font size */
+  padding: 10px; /* Add left padding */
+ 
+  width: 100%; /* Set width to 100% */
+  border: none; /* Remove the border */
+  border-radius: 4px; /* Add border radius */
+  cursor: pointer; /* Add a pointer cursor */
+  transition: background-color 0.3s ease; /* Add transition effect */
+  margin-top: 18px;
+}
+
+.signup-button:hover {
+  background-color: #d71ec2; /* Change the background color on hover */
+}
+
+.signup-button:disabled {
+  background-color: gray; /* Change the background color when the button is disabled */
+  cursor: not-allowed; /* Change the cursor when the button is disabled */
+}
